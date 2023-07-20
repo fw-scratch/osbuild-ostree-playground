@@ -1,0 +1,6 @@
+/usr/bin/dracut --reproducible -v --add ostree --tmpdir=/tmp/dracut -f /tmp/initramfs.img --add "base bash dracut-systemd fs-lib i18n kernel-modules kernel-modules-extra rootfs-block shutdown systemd systemd-initrd terminfo udev-rules usrmount" --omit "lunmask mdraid memstrack nss-softokn nvdimm resume terminfo dm" --filesystems "vfat ext4" --kver 5.14.0-340.303.el9iv.x86_64
+ostree admin init-fs --modern /run/osbuild/tree --sysroot=/run/osbuild/tree
+ostree init --mode=archive --repo=/home/vagrant/centos-automotive-sample-images/osbuild-manifests/_build/osbuild_store/tmp/buildroot-tmp-59kv8vn1/inputs/commits/repo
+ostree admin os-init centos --sysroot=/run/osbuild/tree
+ostree config set sysroot.bootloader none --repo=/run/osbuild/tree/ostree/repo
+ostree admin deploy auto-sig:cs9/x86_64/qemu-minimal --karg=root=LABEL=root --karg-append=ro --karg-append=loglevel=4 --karg-append=efi=runtime --karg-append=libahci.ignore_sss=1 --karg-append=console=ttyS0 --sysroot=/run/osbuild/tree --os=centos

@@ -1,0 +1,1531 @@
+[vagrant@centos9s osbuild-manifests]$ make cs9-qemu-minimal-ostree.x86_64.qcow2
+osbuild-mpp -I . -D image_type="\"ostree\"" -D arch=\"x86_64\" -D distro_name="\"cs9\"" -D target="\"qemu\""    images/minimal.mpp.yml _build/cs9-qemu-minimal-ostree.x86_64.json
++ sudo rm -rf _build/image_output/qcow2
++ mkdir -p _build/image_output/qcow2
++ sudo osbuild --checkpoint build --store _build/osbuild_store --output-directory _build/image_output --export qcow2 _build/cs9-qemu-minimal-ostree.x86_64.json
+Pipeline build: 86c78062205e745ea63f3a5fe3e05d05cfd686e1c59f9f210b3254b07c27fe2e
+Build
+  root: <host>
+  runner: org.osbuild.centos9 (org.osbuild.centos9)
+org.osbuild.rpm: 6c3aa81eb436bdbf1303222753bf83c987ba8e1ffdb665854930177e43bdd0d8 {
+  "gpgkeys": [
+  ],
+  "exclude": {
+    "docs": true
+  }
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+imported gpg key
+imported gpg key
+Verifying packages...
+Preparing packages...
+libgcc-11.4.1-2.1.el9.x86_64
+crypto-policies-20230614-1.git027799d.el9.noarch
+tzdata-2023c-1.el9.noarch
+libreport-filesystem-2.15.2-6.el9.noarch
+fuse-common-3.10.2-5.el9.x86_64
+dnf-data-4.14.0-6.el9.noarch
+gawk-all-langpacks-5.1.0-6.el9.x86_64
+python3-setuptools-wheel-53.0.0-12.el9.noarch
+publicsuffix-list-dafsa-20210518-3.el9.noarch
+pcre2-syntax-10.40-2.el9.noarch
+ncurses-base-6.2-8.20210508.el9.noarch
+libssh-config-0.10.4-11.el9.noarch
+kbd-misc-2.4.0-9.el9.noarch
+kbd-legacy-2.4.0-9.el9.noarch
+coreutils-common-8.32-34.el9.x86_64
+centos-gpg-keys-9.0-21.el9.noarch
+centos-stream-repos-9.0-21.el9.noarch
+centos-stream-release-9.0-21.el9.noarch
+setup-2.13.7-9.el9.noarch
+filesystem-3.16-2.el9.x86_64
+efi-filesystem-4-9.el9.noarch
+basesystem-11-13.el9.noarch
+glibc-gconv-extra-2.34-70.el9.x86_64
+glibc-minimal-langpack-2.34-70.el9.x86_64
+glibc-common-2.34-70.el9.x86_64
+glibc-2.34-70.el9.x86_64
+ncurses-libs-6.2-8.20210508.el9.x86_64
+bash-5.1.8-6.el9.x86_64
+zlib-1.2.11-40.el9.x86_64
+xz-libs-5.2.5-8.el9.x86_64
+libzstd-1.5.1-2.el9.x86_64
+bzip2-libs-1.0.8-8.el9.x86_64
+libcap-2.48-8.el9.x86_64
+libuuid-2.37.4-11.el9.x86_64
+sqlite-libs-3.34.1-6.el9.x86_64
+libxcrypt-4.4.18-3.el9.x86_64
+libgpg-error-1.42-5.el9.x86_64
+libstdc++-11.4.1-2.1.el9.x86_64
+popt-1.18-8.el9.x86_64
+libxml2-2.9.13-4.el9.x86_64
+nspr-4.34.0-18.el9.x86_64
+nss-util-3.79.0-18.el9.x86_64
+libcom_err-1.46.5-3.el9.x86_64
+readline-8.1-4.el9.x86_64
+expat-2.5.0-1.el9.x86_64
+libsepol-3.5-1.el9.x86_64
+libunistring-0.9.10-15.el9.x86_64
+lua-libs-5.4.4-4.el9.x86_64
+libassuan-2.5.5-3.el9.x86_64
+libgcrypt-1.10.0-10.el9.x86_64
+gmp-1:6.2.0-11.el9.x86_64
+json-c-0.14-11.el9.x86_64
+libcap-ng-0.8.2-7.el9.x86_64
+audit-libs-3.0.7-104.el9.x86_64
+libsmartcols-2.37.4-11.el9.x86_64
+pcre2-10.40-2.el9.x86_64
+libselinux-3.5-1.el9.x86_64
+libsemanage-3.5-2.el9.x86_64
+libidn2-2.3.0-7.el9.x86_64
+file-libs-5.39-12.el9.x86_64
+efivar-libs-38-3.el9.x86_64
+fuse-libs-2.9.9-15.el9.x86_64
+keyutils-libs-1.6.3-1.el9.x86_64
+libattr-2.5.1-3.el9.x86_64
+libacl-2.3.1-3.el9.x86_64
+sed-4.8-9.el9.x86_64
+shadow-utils-2:4.9-7.el9.x86_64
+libffi-3.4.2-8.el9.x86_64
+p11-kit-0.24.1-2.el9.x86_64
+libseccomp-2.5.2-2.el9.x86_64
+lz4-libs-1.9.3-5.el9.x86_64
+which-2.21-29.el9.x86_64
+file-5.39-12.el9.x86_64
+libselinux-utils-3.5-1.el9.x86_64
+mpfr-4.1.0-7.el9.x86_64
+gdisk-1.0.7-5.el9.x86_64
+elfutils-libelf-0.189-2.el9.x86_64
+gdbm-libs-1:1.19-4.el9.x86_64
+libgomp-11.4.1-2.1.el9.x86_64
+libsigsegv-2.13-4.el9.x86_64
+gawk-5.1.0-6.el9.x86_64
+libtasn1-4.16.0-8.el9.x86_64
+pcre-8.44-3.el9.3.x86_64
+grep-3.6-5.el9.x86_64
+protobuf-c-1.3.3-13.el9.x86_64
+fuse3-libs-3.10.2-5.el9.x86_64
+fuse3-3.10.2-5.el9.x86_64
+xz-5.2.5-8.el9.x86_64
+libbytesize-2.5-3.el9.x86_64
+fuse-2.9.9-15.el9.x86_64
+libutempter-1.2.1-6.el9.x86_64
+acl-2.3.1-3.el9.x86_64
+gettext-libs-0.21-8.el9.x86_64
+gettext-0.21-8.el9.x86_64
+tar-2:1.34-6.el9.x86_64
+libpsl-0.21.1-5.el9.x86_64
+bubblewrap-0.4.1-6.el9.x86_64
+findutils-1:4.8.0-5.el9.x86_64
+libcomps-0.1.18-1.el9.x86_64
+e2fsprogs-libs-1.46.5-3.el9.x86_64
+libss-1.46.5-3.el9.x86_64
+nss-softokn-freebl-3.79.0-18.el9.x86_64
+nss-softokn-3.79.0-18.el9.x86_64
+libksba-1.5.1-6.el9.x86_64
+libxcrypt-compat-4.4.18-3.el9.x86_64
+pigz-2.5-4.el9.x86_64
+systemd-rpm-macros-252-15.el9.noarch
+libedit-3.1-37.20210216cvs.el9.x86_64
+alternatives-1.24-1.el9.x86_64
+p11-kit-trust-0.24.1-2.el9.x86_64
+openssl-libs-1:3.0.7-21.el9.x86_64
+coreutils-8.32-34.el9.x86_64
+ca-certificates-2022.2.54-90.2.el9.noarch
+systemd-libs-252-15.el9.x86_64
+libblkid-2.37.4-11.el9.x86_64
+kmod-libs-28-9.el9.x86_64
+libmount-2.37.4-11.el9.x86_64
+libarchive-3.5.3-4.el9.x86_64
+kmod-28-9.el9.x86_64
+util-linux-core-2.37.4-11.el9.x86_64
+libfdisk-2.37.4-11.el9.x86_64
+libusbx-1.0.26-1.el9.x86_64
+gzip-1.12-1.el9.x86_64
+cracklib-2.9.6-27.el9.x86_64
+cracklib-dicts-2.9.6-27.el9.x86_64
+fuse-overlayfs-1.12-1.el9.x86_64
+e2fsprogs-1.46.5-3.el9.x86_64
+dbus-libs-1:1.12.20-7.el9.x86_64
+procps-ng-3.3.17-11.el9.x86_64
+libatasmart-0.19-22.el9.x86_64
+python3-pip-wheel-21.2.3-6.el9.noarch
+python-unversioned-command-3.9.17-1.el9.noarch
+python3-3.9.17-1.el9.x86_64
+python3-libs-3.9.17-1.el9.x86_64
+python3-setuptools-53.0.0-12.el9.noarch
+python3-libselinux-3.5-1.el9.x86_64
+python3-libsemanage-3.5-2.el9.x86_64
+python3-distro-1.5.0-7.el9.noarch
+python3-setools-4.4.2-2.1.el9.x86_64
+python3-libcomps-0.1.18-1.el9.x86_64
+crypto-policies-scripts-20230614-1.git027799d.el9.noarch
+nss-sysinit-3.79.0-18.el9.x86_64
+nss-3.79.0-18.el9.x86_64
+python3-six-1.15.0-9.el9.noarch
+python3-audit-3.0.7-104.el9.x86_64
+openssl-1:3.0.7-21.el9.x86_64
+libevent-2.1.12-6.el9.x86_64
+mokutil-2:0.6.0-4.el9.x86_64
+cpio-2.13-16.el9.x86_64
+diffutils-3.7-12.el9.x86_64
+dmidecode-1:3.3-7.el9.x86_64
+dosfstools-4.2-3.el9.x86_64
+inih-49-6.el9.x86_64
+libaio-0.3.111-13.el9.x86_64
+libbrotli-1.0.9-6.el9.x86_64
+libdb-5.3.28-53.el9.x86_64
+libeconf-0.4.1-3.el9.x86_64
+libpwquality-1.4.4-8.el9.x86_64
+pam-1.5.1-15.el9.x86_64
+util-linux-2.37.4-11.el9.x86_64
+dbus-1:1.12.20-7.el9.x86_64
+systemd-pam-252-15.el9.x86_64
+systemd-252-15.el9.x86_64
+dbus-common-1:1.12.20-7.el9.noarch
+Created symlink /etc/systemd/system/sockets.target.wants/dbus.socket → /usr/lib/systemd/system/dbus.socket.
+Created symlink /etc/systemd/user/sockets.target.wants/dbus.socket → /usr/lib/systemd/user/dbus.socket.
+dbus-broker-28-7.el9.x86_64
+Created symlink /etc/systemd/system/dbus.service → /usr/lib/systemd/system/dbus-broker.service.
+Created symlink /etc/systemd/user/dbus.service → /usr/lib/systemd/user/dbus-broker.service.
+grub2-common-1:2.06-63.el9.noarch
+device-mapper-libs-9:1.02.195-2.el9.x86_64
+device-mapper-9:1.02.195-2.el9.x86_64
+cryptsetup-libs-2.6.0-2.el9.x86_64
+parted-3.5-2.el9.x86_64
+grub2-tools-minimal-1:2.06-63.el9.x86_64
+kpartx-0.8.7-21.el9.x86_64
+elfutils-default-yama-scope-0.189-2.el9.noarch
+elfutils-libs-0.189-2.el9.x86_64
+libkcapi-1.3.1-3.el9.x86_64
+libkcapi-hmaccalc-1.3.1-3.el9.x86_64
+mdadm-4.2-9.el9.x86_64
+Created symlink /etc/systemd/system/multi-user.target.wants/mdmonitor.service → /usr/lib/systemd/system/mdmonitor.service.
+kbd-2.4.0-9.el9.x86_64
+libnghttp2-1.43.0-5.el9.x86_64
+libnl3-3.7.0-1.el9.x86_64
+libsmbios-2.4.3-4.el9.x86_64
+libverto-0.3.2-3.el9.x86_64
+krb5-libs-1.20.1-8.el9.x86_64
+cyrus-sasl-lib-2.1.27-21.el9.x86_64
+openldap-2.6.3-1.el9.x86_64
+libssh-0.10.4-11.el9.x86_64
+libcurl-7.76.1-23.el9.x86_64
+tpm2-tss-3.0.3-8.el9.x86_64
+systemd-udev-252-15.el9.x86_64
+Created symlink /etc/systemd/system/sysinit.target.wants/systemd-boot-update.service → /usr/lib/systemd/system/systemd-boot-update.service.
+dracut-057-22.git20230530.el9.x86_64
+os-prober-1.77-10.el9.x86_64
+grub2-tools-1:2.06-63.el9.x86_64
+ima-evm-utils-1.4-4.el9.x86_64
+curl-7.76.1-23.el9.x86_64
+rpm-4.16.1.3-23.el9.x86_64
+rpm-libs-4.16.1.3-23.el9.x86_64
+policycoreutils-3.5-2.el9.x86_64
+Created symlink /etc/systemd/system/sysinit.target.wants/selinux-autorelabel-mark.service → /usr/lib/systemd/system/selinux-autorelabel-mark.service.
+selinux-policy-38.1.17-1.el9.noarch
+selinux-policy-targeted-38.1.17-1.el9.noarch
+libsolv-0.7.24-2.el9.x86_64
+rpm-build-libs-4.16.1.3-23.el9.x86_64
+rpm-plugin-systemd-inhibit-4.16.1.3-23.el9.x86_64
+libyaml-0.2.5-7.el9.x86_64
+nettle-3.8-3.el9.x86_64
+gnutls-3.7.6-20.el9.x86_64
+glib2-2.68.4-9.el9.x86_64
+libblockdev-utils-2.28-7.el9.x86_64
+polkit-libs-0.117-11.el9.x86_64
+json-glib-1.6.6-1.el9.x86_64
+libmodulemd-2.13.0-2.el9.x86_64
+polkit-0.117-11.el9.x86_64
+polkit-pkla-compat-0.1-21.el9.x86_64
+libgudev-237-1.el9.x86_64
+shared-mime-info-2.1-5.el9.x86_64
+libxmlb-0.3.10-1.el9.x86_64
+libblockdev-2.28-7.el9.x86_64
+libblockdev-fs-2.28-7.el9.x86_64
+libblockdev-loop-2.28-7.el9.x86_64
+libblockdev-mdraid-2.28-7.el9.x86_64
+libblockdev-part-2.28-7.el9.x86_64
+libblockdev-swap-2.28-7.el9.x86_64
+libgcab1-1.4-6.el9.x86_64
+libgusb-0.3.6-3.el9.x86_64
+libslirp-4.4.0-7.el9.x86_64
+slirp4netns-1.2.0-3.el9.x86_64
+libudisks2-2.9.4-8.el9.x86_64
+npth-1.6-8.el9.x86_64
+gnupg2-2.3.3-2.el9.x86_64
+gpgme-1.15.1-6.el9.x86_64
+ostree-libs-2023.5-2.el9.x86_64
+librepo-1.14.5-1.el9.x86_64
+libdnf-0.69.0-5.el9.x86_64
+python3-libdnf-0.69.0-5.el9.x86_64
+python3-hawkey-0.69.0-5.el9.x86_64
+rpm-ostree-libs-2023.5-1.el9.x86_64
+ostree-2023.5-2.el9.x86_64
+Created symlink /etc/systemd/system/local-fs.target.wants/ostree-remount.service → /usr/lib/systemd/system/ostree-remount.service.
+libjcat-0.1.6-3.el9.x86_64
+python3-gpg-1.15.1-6.el9.x86_64
+volume_key-libs-0.3.12-15.el9.x86_64
+libblockdev-crypto-2.28-7.el9.x86_64
+rpm-sign-libs-4.16.1.3-23.el9.x86_64
+python3-rpm-4.16.1.3-23.el9.x86_64
+python3-dnf-4.14.0-6.el9.noarch
+numactl-libs-2.0.14-7.el9.x86_64
+pciutils-libs-3.7.0-5.el9.x86_64
+flashrom-1.2-10.el9.x86_64
+userspace-rcu-0.12.1-6.el9.x86_64
+xfsprogs-5.19.0-3.el9.x86_64
+udisks2-2.9.4-8.el9.x86_64
+Created symlink /etc/systemd/system/graphical.target.wants/udisks2.service → /usr/lib/systemd/system/udisks2.service.
+fwupd-plugin-flashrom-1.8.10-2.el9.x86_64
+fwupd-1.8.10-2.el9.x86_64
+checkpolicy-3.5-1.el9.x86_64
+python3-policycoreutils-3.5-2.el9.noarch
+policycoreutils-python-utils-3.5-2.el9.noarch
+container-selinux-3:2.218.0-2.el9.noarch
+libnet-1.2-6.el9.x86_64
+criu-3.18-1.el9.x86_64
+criu-libs-3.18-1.el9.x86_64
+liburing-2.3-2.el9.x86_64
+yajl-2.1.0-21.el9.x86_64
+crun-1.8.5-1.el9.x86_64
+containers-common-2:1-52.el9.x86_64
+skopeo-2:1.12.0-3.el9.x86_64
+rpm-ostree-2023.5-1.el9.x86_64
+qemu-img-17:8.0.0-6.el9.x86_64
+shim-x64-15-15.el8_2.x86_64
+dnf-4.14.0-6.el9.noarch
+Created symlink /etc/systemd/system/timers.target.wants/dnf-makecache.timer → /usr/lib/systemd/system/dnf-makecache.timer.
+rpm-plugin-selinux-4.16.1.3-23.el9.x86_64
+grub2-efi-x64-1:2.06-63.el9.x86_64
+grub2-tools-efi-1:2.06-63.el9.x86_64
+grub2-efi-x64-cdboot-1:2.06-63.el9.x86_64
+python3-iniparse-0.4-45.el9.noarch
+efibootmgr-16-12.el9.x86_64
+deleting the fake machine id
+
+⏱  Duration: 48s
+org.osbuild.selinux: 86c78062205e745ea63f3a5fe3e05d05cfd686e1c59f9f210b3254b07c27fe2e {
+  "file_contexts": "etc/selinux/targeted/contexts/files/file_contexts",
+  "labels": {
+    "/usr/bin/cp": "system_u:object_r:install_exec_t:s0",
+    "/usr/bin/tar": "system_u:object_r:install_exec_t:s0"
+  }
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+
+⏱  Duration: 6s
+Pipeline rootfs: ed474f3f20defe9fab6158e30072009cc042872cf1a5771b03f46cc10e168dd1
+Build
+  root: 86c78062205e745ea63f3a5fe3e05d05cfd686e1c59f9f210b3254b07c27fe2e
+  runner: org.osbuild.centos9 (org.osbuild.centos9)
+org.osbuild.kernel-cmdline: d4d15c7590fa859900f44bda8e1deb695e6478b0ffcd6f90f4f7127137f776d3 {
+  "root_fs_uuid": "76a22bf4-f153-4541-b6c7-0332c0dfaeac",
+  "kernel_opts": "ro loglevel=4 efi=runtime libahci.ignore_sss=1 console=ttyS0"
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+
+⏱  Duration: 0s
+org.osbuild.rpm: f323b8b4ebdb356868a4090c83997c8c55f2783f3db887acbe34f05ec6e45203 {
+  "gpgkeys": [
+  ],
+  "disable_dracut": true,
+  "exclude": {
+    "docs": true
+  }
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+imported gpg key
+imported gpg key
+Verifying packages...
+Preparing packages...
+libgcc-11.4.1-2.1.el9.x86_64
+crypto-policies-20230614-1.git027799d.el9.noarch
+centos-gpg-keys-9.0-21.el9.noarch
+centos-stream-repos-9.0-21.el9.noarch
+centos-release-automotive-9.0-8.el9iv.noarch
+setup-2.13.7-9.el9.noarch
+filesystem-3.16-2.el9.x86_64
+efi-filesystem-4-9.el9.noarch
+basesystem-11-13.el9.noarch
+tzdata-2023c-1.el9.noarch
+publicsuffix-list-dafsa-20210518-3.el9.noarch
+pcre2-syntax-10.40-2.el9.noarch
+ncurses-base-6.2-8.20210508.el9.noarch
+glibc-langpack-en-2.34-70.el9.x86_64
+glibc-common-2.34-70.el9.x86_64
+glibc-2.34-70.el9.x86_64
+ncurses-libs-6.2-8.20210508.el9.x86_64
+bash-5.1.8-6.el9.x86_64
+zlib-1.2.11-40.el9.x86_64
+xz-libs-5.2.5-8.el9.x86_64
+libcap-2.48-8.el9.x86_64
+libxcrypt-4.4.18-3.el9.x86_64
+libzstd-1.5.1-2.el9.x86_64
+bzip2-libs-1.0.8-8.el9.x86_64
+libuuid-2.37.4-11.el9.x86_64
+libcom_err-1.46.5-3.el9.x86_64
+libgpg-error-1.42-5.el9.x86_64
+popt-1.18-8.el9.x86_64
+libxml2-2.9.13-4.el9.x86_64
+libunistring-0.9.10-15.el9.x86_64
+sqlite-libs-3.34.1-6.el9.x86_64
+readline-8.1-4.el9.x86_64
+libsepol-3.5-1.el9.x86_64
+libstdc++-11.4.1-2.1.el9.x86_64
+libidn2-2.3.0-7.el9.x86_64
+libassuan-2.5.5-3.el9.x86_64
+libgcrypt-1.10.0-10.el9.x86_64
+expat-2.5.0-1.el9.x86_64
+fuse-libs-2.9.9-15.el9.x86_64
+gmp-1:6.2.0-11.el9.x86_64
+json-c-0.14-11.el9.x86_64
+libattr-2.5.1-3.el9.x86_64
+libacl-2.3.1-3.el9.x86_64
+libcap-ng-0.8.2-7.el9.x86_64
+audit-libs-3.0.7-104.el9.x86_64
+lz4-libs-1.9.3-5.el9.x86_64
+pcre2-10.40-2.el9.x86_64
+libselinux-3.5-1.el9.x86_64
+sed-4.8-9.el9.x86_64
+libsemanage-3.5-2.el9.x86_64
+shadow-utils-2:4.9-7.el9.x86_64
+file-libs-5.39-12.el9.x86_64
+alternatives-1.24-1.el9.x86_64
+libffi-3.4.2-8.el9.x86_64
+p11-kit-0.24.1-2.el9.x86_64
+libsigsegv-2.13-4.el9.x86_64
+libsmartcols-2.37.4-11.el9.x86_64
+libtasn1-4.16.0-8.el9.x86_64
+p11-kit-trust-0.24.1-2.el9.x86_64
+lua-libs-5.4.4-4.el9.x86_64
+pcre-8.44-3.el9.3.x86_64
+grep-3.6-5.el9.x86_64
+which-2.21-29.el9.x86_64
+xz-5.2.5-8.el9.x86_64
+file-5.39-12.el9.x86_64
+libutempter-1.2.1-6.el9.x86_64
+bubblewrap-0.4.1-6.el9.x86_64
+findutils-1:4.8.0-5.el9.x86_64
+libselinux-utils-3.5-1.el9.x86_64
+acl-2.3.1-3.el9.x86_64
+gettext-libs-0.21-8.el9.x86_64
+mpfr-4.1.0-7.el9.x86_64
+gawk-5.1.0-6.el9.x86_64
+libpsl-0.21.1-5.el9.x86_64
+libksba-1.5.1-6.el9.x86_64
+e2fsprogs-libs-1.46.5-3.el9.x86_64
+libss-1.46.5-3.el9.x86_64
+pigz-2.5-4.el9.x86_64
+systemd-rpm-macros-252-15.el9.noarch
+cpio-2.13-16.el9.x86_64
+diffutils-3.7-12.el9.x86_64
+efivar-libs-38-3.el9.x86_64
+gdbm-libs-1:1.19-4.el9.x86_64
+keyutils-libs-1.6.3-1.el9.x86_64
+libbrotli-1.0.9-6.el9.x86_64
+libdb-5.3.28-53.el9.x86_64
+libeconf-0.4.1-3.el9.x86_64
+libgomp-11.4.1-2.1.el9.x86_64
+gettext-0.21-8.el9.x86_64
+libndp-1.8-4.el9.x86_64
+libnghttp2-1.43.0-5.el9.x86_64
+libseccomp-2.5.2-2.el9.x86_64
+libverto-0.3.2-3.el9.x86_64
+libyaml-0.2.5-7.el9.x86_64
+nettle-3.8-3.el9.x86_64
+gnutls-3.7.6-20.el9.x86_64
+npth-1.6-8.el9.x86_64
+linux-firmware-whence-20230525-135.el9.noarch
+linux-firmware-automotive-20220310-133.el9iv.noarch
+libssh-config-0.10.4-11.el9.noarch
+kbd-misc-2.4.0-9.el9.noarch
+kbd-legacy-2.4.0-9.el9.noarch
+fuse-common-3.10.2-5.el9.x86_64
+fuse-2.9.9-15.el9.x86_64
+coreutils-common-8.32-34.el9.x86_64
+openssl-libs-1:3.0.7-21.el9.x86_64
+coreutils-8.32-34.el9.x86_64
+ca-certificates-2022.2.54-90.2.el9.noarch
+systemd-libs-252-15.el9.x86_64
+libblkid-2.37.4-11.el9.x86_64
+libmount-2.37.4-11.el9.x86_64
+glib2-2.68.4-9.el9.x86_64
+libarchive-3.5.3-4.el9.x86_64
+polkit-libs-0.117-11.el9.x86_64
+util-linux-core-2.37.4-11.el9.x86_64
+libfdisk-2.37.4-11.el9.x86_64
+krb5-libs-1.20.1-8.el9.x86_64
+kmod-28-9.el9.x86_64
+kmod-libs-28-9.el9.x86_64
+json-glib-1.6.6-1.el9.x86_64
+gzip-1.12-1.el9.x86_64
+cracklib-2.9.6-27.el9.x86_64
+cracklib-dicts-2.9.6-27.el9.x86_64
+cyrus-sasl-lib-2.1.27-21.el9.x86_64
+libssh-0.10.4-11.el9.x86_64
+NetworkManager-libnm-1:1.43.10-1.el9.x86_64
+procps-ng-3.3.17-11.el9.x86_64
+openssl-1:3.0.7-21.el9.x86_64
+libpwquality-1.4.4-8.el9.x86_64
+pam-1.5.1-15.el9.x86_64
+util-linux-2.37.4-11.el9.x86_64
+dbus-1:1.12.20-7.el9.x86_64
+systemd-pam-252-15.el9.x86_64
+systemd-252-15.el9.x86_64
+dbus-common-1:1.12.20-7.el9.noarch
+Created symlink /etc/systemd/system/sockets.target.wants/dbus.socket → /usr/lib/systemd/system/dbus.socket.
+dbus-broker-28-7.el9.x86_64
+Created symlink /etc/systemd/system/dbus.service → /usr/lib/systemd/system/dbus-broker.service.
+grub2-common-1:2.06-63.el9.noarch
+device-mapper-libs-9:1.02.195-2.el9.x86_64
+device-mapper-9:1.02.195-2.el9.x86_64
+grub2-tools-minimal-1:2.06-63.el9.x86_64
+cryptsetup-libs-2.6.0-2.el9.x86_64
+kpartx-0.8.7-21.el9.x86_64
+libkcapi-1.3.1-3.el9.x86_64
+libkcapi-hmaccalc-1.3.1-3.el9.x86_64
+polkit-0.117-11.el9.x86_64
+polkit-pkla-compat-0.1-21.el9.x86_64
+kbd-2.4.0-9.el9.x86_64
+libevent-2.1.12-6.el9.x86_64
+openldap-2.6.3-1.el9.x86_64
+libcurl-7.76.1-23.el9.x86_64
+gnupg2-2.3.3-2.el9.x86_64
+gpgme-1.15.1-6.el9.x86_64
+ostree-libs-2023.5-2.el9.x86_64
+librepo-1.14.5-1.el9.x86_64
+curl-7.76.1-23.el9.x86_64
+rpm-4.16.1.3-23.el9.x86_64
+rpm-libs-4.16.1.3-23.el9.x86_64
+policycoreutils-3.5-2.el9.x86_64
+selinux-policy-38.1.17-1.el9.noarch
+selinux-policy-targeted-38.1.17-1.el9.noarch
+libmodulemd-2.13.0-2.el9.x86_64
+libsolv-0.7.24-2.el9.x86_64
+rpm-ostree-libs-2023.5-1.el9.x86_64
+tpm2-tss-3.0.3-8.el9.x86_64
+systemd-udev-252-15.el9.x86_64
+Created symlink /etc/systemd/system/sysinit.target.wants/systemd-boot-update.service → /usr/lib/systemd/system/systemd-boot-update.service.
+dracut-057-22.git20230530.el9.x86_64
+kernel-automotive-modules-core-5.14.0-340.303.el9iv.x86_64
+kernel-automotive-core-5.14.0-340.303.el9iv.x86_64
+kernel-automotive-modules-5.14.0-340.303.el9iv.x86_64
+ostree-2023.5-2.el9.x86_64
+Created symlink /etc/systemd/system/local-fs.target.wants/ostree-remount.service → /usr/lib/systemd/system/ostree-remount.service.
+rpm-ostree-2023.5-1.el9.x86_64
+os-prober-1.77-10.el9.x86_64
+grub2-tools-1:2.06-63.el9.x86_64
+libuser-0.63-12.el9.x86_64
+passwd-0.80-12.el9.x86_64
+grub2-efi-x64-1:2.06-63.el9.x86_64
+greenboot-0.15.4-1.el9.x86_64
+kernel-automotive-5.14.0-340.303.el9iv.x86_64
+dracut-config-generic-057-22.git20230530.el9.x86_64
+NetworkManager-1:1.43.10-1.el9.x86_64
+Created symlink /etc/systemd/system/multi-user.target.wants/NetworkManager.service → /usr/lib/systemd/system/NetworkManager.service.
+Created symlink /etc/systemd/system/dbus-org.freedesktop.nm-dispatcher.service → /usr/lib/systemd/system/NetworkManager-dispatcher.service.
+Created symlink /etc/systemd/system/network-online.target.wants/NetworkManager-wait-online.service → /usr/lib/systemd/system/NetworkManager-wait-online.service.
+rpm-plugin-selinux-4.16.1.3-23.el9.x86_64
+microcode_ctl-4:20230214-2.el9.noarch
+find: ‘/lib/firmware/intel-ucode’: No such file or directory
+e2fsprogs-1.46.5-3.el9.x86_64
+efibootmgr-16-12.el9.x86_64
+hostname-3.23-6.el9.x86_64
+nss-altfiles-2.18.1-20.el9.x86_64
+rootfiles-8.1-31.el9.noarch
+grub2-probe: error: failed to get canonical path of `/dev/mapper/centos9s-root'.
+No path or device is specified.
+Usage: grub2-probe [OPTION...] [OPTION]... [PATH|DEVICE]
+Try 'grub2-probe --help' or 'grub2-probe --usage' for more information.
+deleting the fake machine id
+
+⏱  Duration: 42s
+org.osbuild.users: ed474f3f20defe9fab6158e30072009cc042872cf1a5771b03f46cc10e168dd1 {
+  "users": {
+    "guest": {
+      "password": "$6$xoLqEUz0cGGJRx01$H3H/bFm0myJPULNMtbSsOFd/2BnHqHkMD92Sfxd.EKM9hXTWSmELG8cf205l6dktomuTcgKGGtGDgtvHVXSWU.",
+      "gid": 999,
+      "uid": 999
+    }
+  }
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+useradd warning: guest's uid 999 outside of the UID_MIN 1000 and UID_MAX 60000 range.
+
+⏱  Duration: 0s
+Pipeline extra-tree-content: fd74425ba8d7a34eb17895370f30346b02e013ff1383b85b8dd64f5e984db1b0
+Build
+  root: 86c78062205e745ea63f3a5fe3e05d05cfd686e1c59f9f210b3254b07c27fe2e
+  runner: org.osbuild.centos9 (org.osbuild.centos9)
+org.osbuild.copy: 176e283d97a16f27d501646e673f9c916043bce02b7dfbf4fab051c2c9b079b7 {
+  "paths": [
+    {
+      "from": "input://inlinefile/sha256:5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8",
+      "to": "tree:///luks-key"
+    }
+  ]
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+copying '/run/osbuild/inputs/inlinefile/sha256:5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8' -> '/run/osbuild/tree/luks-key'
+
+⏱  Duration: 0s
+org.osbuild.copy: 8bdccb8f73fe81772cc4aae0b8d8c1280c7772a3cd5d2d18f1ac17c835867116 {
+  "paths": [
+    {
+      "from": "input://inlinefile/sha256:11f983c54cdc21f89d1280044027304baa2a789e5bb4a7a2a2914192b4057baf",
+      "to": "tree:///storage.conf"
+    }
+  ]
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+copying '/run/osbuild/inputs/inlinefile/sha256:11f983c54cdc21f89d1280044027304baa2a789e5bb4a7a2a2914192b4057baf' -> '/run/osbuild/tree/storage.conf'
+
+⏱  Duration: 0s
+org.osbuild.copy: 99334b304b5e1ddd30ccc0449abe9ee7b3de49150d60d46a564211a6651b20bd {
+  "paths": [
+    {
+      "from": "input://inlinefile/sha256:9970c3141fb0b81a9e5a905ce86e6a5b16eb58af703366b2da83e49c9f95ab0e",
+      "to": "tree:///containers.conf"
+    }
+  ]
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+copying '/run/osbuild/inputs/inlinefile/sha256:9970c3141fb0b81a9e5a905ce86e6a5b16eb58af703366b2da83e49c9f95ab0e' -> '/run/osbuild/tree/containers.conf'
+
+⏱  Duration: 0s
+org.osbuild.copy: fd74425ba8d7a34eb17895370f30346b02e013ff1383b85b8dd64f5e984db1b0 {
+  "paths": [
+    {
+      "from": "input://inlinefile/sha256:d3a01d55a3e26cbbed2483e18d71664616807b24e30c7ebc306c12c7830cbe07",
+      "to": "tree:///build-info"
+    }
+  ]
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+copying '/run/osbuild/inputs/inlinefile/sha256:d3a01d55a3e26cbbed2483e18d71664616807b24e30c7ebc306c12c7830cbe07' -> '/run/osbuild/tree/build-info'
+
+⏱  Duration: 0s
+Pipeline ostree-tree: 54fe818ee8e540e9d4cfc92714d4b133a6d06587485a409bc7475f4ad0a19b2e
+Build
+  root: 86c78062205e745ea63f3a5fe3e05d05cfd686e1c59f9f210b3254b07c27fe2e
+  runner: org.osbuild.centos9 (org.osbuild.centos9)
+org.osbuild.copy: 529016fd6f2988267d4ae96c1d96a152ee63e09203c56fa6f152cfe32019b6d2 {
+  "paths": [
+    {
+      "from": "input://tree/",
+      "to": "tree:///"
+    },
+    {
+      "from": "input://extra-tree/build-info",
+      "to": "tree:///etc/build-info"
+    }
+  ]
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+copying '/run/osbuild/inputs/tree/.' -> '/run/osbuild/tree/.'
+copying '/run/osbuild/inputs/extra-tree/build-info' -> '/run/osbuild/tree/etc/build-info'
+
+⏱  Duration: 1s
+org.osbuild.systemd: c92af3af5c6f7d370dc4636284045a54cab2ea39bc4fd66d2e9a16842ab5b333 {
+  "enabled_services": [
+    "greenboot-grub2-set-counter.service",
+    "greenboot-grub2-set-success.service",
+    "greenboot-healthcheck.service",
+    "greenboot-rpm-ostree-grub2-check-fallback.service",
+    "greenboot-status.service",
+    "greenboot-task-runner.service"
+  ]
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+Created symlink /run/osbuild/tree/etc/systemd/system/ostree-finalize-staged.service.requires/greenboot-grub2-set-counter.service → /usr/lib/systemd/system/greenboot-grub2-set-counter.service.
+Created symlink /run/osbuild/tree/etc/systemd/system/multi-user.target.wants/greenboot-grub2-set-success.service → /usr/lib/systemd/system/greenboot-grub2-set-success.service.
+Created symlink /run/osbuild/tree/etc/systemd/system/multi-user.target.wants/greenboot-healthcheck.service → /usr/lib/systemd/system/greenboot-healthcheck.service.
+Created symlink /run/osbuild/tree/etc/systemd/system/boot-complete.target.requires/greenboot-healthcheck.service → /usr/lib/systemd/system/greenboot-healthcheck.service.
+Created symlink /run/osbuild/tree/etc/systemd/system/greenboot-healthcheck.service.requires/greenboot-rpm-ostree-grub2-check-fallback.service → /usr/lib/systemd/system/greenboot-rpm-ostree-grub2-check-fallback.service.
+Created symlink /run/osbuild/tree/etc/systemd/system/multi-user.target.wants/greenboot-status.service → /usr/lib/systemd/system/greenboot-status.service.
+Created symlink /run/osbuild/tree/etc/systemd/system/multi-user.target.wants/greenboot-task-runner.service → /usr/lib/systemd/system/greenboot-task-runner.service.
+
+⏱  Duration: 0s
+org.osbuild.locale: 4cefa4f5071c3ea631b71c4823834d0ea23a8d89d3141aed4fb220b303a7a163 {
+  "language": "en_US.UTF-8"
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+/run/osbuild/tree/etc/locale.conf written.
+
+⏱  Duration: 0s
+org.osbuild.timezone: 978d40226dafcb1982a9142d7653d514c920c1d55be72864e2350123ec251e43 {
+  "zone": "UTC"
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+/run/osbuild/tree/etc/localtime written
+
+⏱  Duration: 0s
+org.osbuild.systemd: 48df497341e5b2511e9f7d9569a4b8253601df415a3734eb0f2968277d44aff8 {
+  "enabled_services": [
+    "tmp.mount"
+  ],
+  "masked_services": []
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+Created symlink /run/osbuild/tree/etc/systemd/system/local-fs.target.wants/tmp.mount → /usr/lib/systemd/system/tmp.mount.
+
+⏱  Duration: 0s
+org.osbuild.selinux: 6e58bd77ca75931bed997d2bd44c9ed90bd521294069bd9c42055736965f66f1 {
+  "file_contexts": "etc/selinux/targeted/contexts/files/file_contexts"
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+
+⏱  Duration: 4s
+org.osbuild.ostree.preptree: 54fe818ee8e540e9d4cfc92714d4b133a6d06587485a409bc7475f4ad0a19b2e {
+  "etc_group_members": [
+    "wheel",
+    "docker"
+  ],
+  "initramfs-args": [
+    "--add",
+    "base bash dracut-systemd fs-lib i18n kernel-modules kernel-modules-extra rootfs-block shutdown systemd systemd-initrd terminfo udev-rules usrmount",
+    "--omit",
+    "lunmask mdraid memstrack nss-softokn nvdimm resume terminfo dm",
+    "--filesystems",
+    "vfat ext4"
+  ]
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+ostree: machineid-compat: True
+Moving tree to temporary root
+Initializing new root filesystem
+Moving data back from temporary root
+No embedded whiteouts found
+Recompiling policy
+The --rebuild-if-modules-changed option is deprecated. Use --refresh instead.
+Migrating /usr/etc/passwd to /usr/lib/
+Migrating /usr/etc/group to /usr/lib/
+SELinux policy in /var, enabling workaround
+Ignoring non-directory/non-symlink '"var/cache/ldconfig/aux-cache"'
+Ignoring non-directory/non-symlink '"var/log/tallylog"'
+Ignoring non-directory/non-symlink '"var/log/lastlog"'
+Ignoring non-directory/non-symlink '"var/spool/mail/guest"'
+Ignoring non-directory/non-symlink '"var/home/guest/.bash_logout"'
+Ignoring non-directory/non-symlink '"var/home/guest/.bash_profile"'
+Ignoring non-directory/non-symlink '"var/home/guest/.bashrc"'
+Adding rpm-ostree-0-integration.conf
+Preparing kernel
+Creating empty machine-id
+/usr/bin/dracut: line 1054: /sys/module/firmware_class/parameters/path: No such file or directory
+dracut: Executing: /usr/bin/dracut --reproducible -v --add ostree --tmpdir=/tmp/dracut -f /tmp/initramfs.img --add "base bash dracut-systemd fs-lib i18n kernel-modules kernel-modules-extra rootfs-block shutdown systemd systemd-initrd terminfo udev-rules usrmount" --omit "lunmask mdraid memstrack nss-softokn nvdimm resume terminfo dm" --filesystems "vfat ext4" --kver 5.14.0-340.303.el9iv.x86_64
+dracut: dracut module 'systemd-resolved' will not be installed, because command 'resolvectl' could not be found!
+dracut: dracut module 'systemd-resolved' will not be installed, because command '/usr/lib/systemd/systemd-resolved' could not be found!
+dracut: dracut module 'systemd-timesyncd' will not be installed, because command '/usr/lib/systemd/systemd-timesyncd' could not be found!
+dracut: dracut module 'systemd-timesyncd' will not be installed, because command '/usr/lib/systemd/systemd-time-wait-sync' could not be found!
+dracut: dracut module 'modsign' will not be installed, because command 'keyctl' could not be found!
+dracut: dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
+dracut: dracut module 'dbus-daemon' will not be installed, because command 'dbus-daemon' could not be found!
+dracut: dracut module 'rngd' will not be installed, because command 'rngd' could not be found!
+dracut: 62bluetooth: Could not find any command of '/usr/lib/bluetooth/bluetoothd /usr/libexec/bluetooth/bluetoothd'!
+dracut: dracut module 'lvmmerge' will not be installed, because command 'lvm' could not be found!
+dracut: dracut module 'lvmthinpool-monitor' will not be installed, because command 'lvm' could not be found!
+dracut: dracut module 'btrfs' will not be installed, because command 'btrfs' could not be found!
+dracut: dracut module 'crypt' depends on 'dm', which can't be installed
+dracut: dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+dracut: dracut module 'lvm' will not be installed, because command 'lvm' could not be found!
+dracut: dracut module 'multipath' will not be installed, because command 'multipath' could not be found!
+dracut: dracut module 'pcsc' will not be installed, because command 'pcscd' could not be found!
+dracut: dracut module 'tpm2-tss' will not be installed, because command 'tpm2' could not be found!
+dracut: dracut module 'nvmf' will not be installed, because command 'nvme' could not be found!
+dracut: dracut module 'biosdevname' will not be installed, because command 'biosdevname' could not be found!
+dracut: *** Including module: bash ***
+dracut: *** Including module: systemd ***
+dracut: *** Including module: systemd-initrd ***
+dracut: *** Including module: i18n ***
+dracut: *** Including module: kernel-modules ***
+dracut: *** Including module: kernel-modules-extra ***
+dracut: *** Including module: qemu ***
+dracut: *** Including module: rootfs-block ***
+dracut: *** Including module: udev-rules ***
+dracut: Skipping udev rule: 91-permissions.rules
+dracut: Skipping udev rule: 80-drivers-modprobe.rules
+dracut: *** Including module: virtfs ***
+dracut: *** Including module: virtiofs ***
+dracut: *** Including module: dracut-systemd ***
+dracut: *** Including module: ostree ***
+dracut: *** Including module: usrmount ***
+dracut: *** Including module: base ***
+dracut: *** Including module: fs-lib ***
+dracut: *** Including module: microcode_ctl-fw_dir_override ***
+dracut:   microcode_ctl module: mangling fw_dir
+dracut:     microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel"...
+intel: model '', path ' intel-ucode/*', kvers ''
+dracut:       microcode_ctl: intel: caveats check for kernel version "5.14.0-340.303.el9iv.x86_64" passed, adding "/usr/share/microcode_ctl/ucode_with_caveats/intel" to fw_dir variable
+dracut:     microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-2d-07"...
+intel-06-2d-07: model 'GenuineIntel 06-2d-07', path ' intel-ucode/06-2d-07', kvers ''
+Dependency check for required intel: calling check_caveat 'intel' '1' match_model=0
+intel: model '', path ' intel-ucode/*', kvers ''
+Dependency check for required intel succeeded: result=0
+dracut:       microcode_ctl: intel-06-2d-07: caveats check for kernel version "5.14.0-340.303.el9iv.x86_64" passed, adding "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-2d-07" to fw_dir variable
+dracut:     microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-4e-03"...
+intel-06-4e-03: model 'GenuineIntel 06-4e-03', path ' intel-ucode/06-4e-03', kvers ''
+Dependency check for required intel: calling check_caveat 'intel' '1' match_model=0
+intel: model '', path ' intel-ucode/*', kvers ''
+Dependency check for required intel succeeded: result=0
+intel-06-4e-03: caveat is disabled in configuration
+dracut:     microcode_ctl: kernel version "5.14.0-340.303.el9iv.x86_64" failed early load check for "intel-06-4e-03", skipping
+dracut:     microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-4f-01"...
+intel-06-4f-01: model 'GenuineIntel 06-4f-01', path ' intel-ucode/06-4f-01', kvers ' 4.17.0 3.10.0-894 3.10.0-862.6.1 3.10.0-693.35.1 3.10.0-514.52.1 3.10.0-327.70.1 2.6.32-754.1.1 2.6.32-573.58.1 2.6.32-504.71.1 2.6.32-431.90.1 2.6.32-358.90.1'
+Dependency check for required intel: calling check_caveat 'intel' '1' match_model=0
+intel: model '', path ' intel-ucode/*', kvers ''
+Dependency check for required intel succeeded: result=0
+intel-06-4f-01: caveat is disabled in configuration
+dracut:     microcode_ctl: kernel version "5.14.0-340.303.el9iv.x86_64" failed early load check for "intel-06-4f-01", skipping
+dracut:     microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-55-04"...
+intel-06-55-04: model 'GenuineIntel 06-55-04', path ' intel-ucode/06-55-04', kvers ''
+Dependency check for required intel: calling check_caveat 'intel' '1' match_model=0
+intel: model '', path ' intel-ucode/*', kvers ''
+Dependency check for required intel succeeded: result=0
+dracut:       microcode_ctl: intel-06-55-04: caveats check for kernel version "5.14.0-340.303.el9iv.x86_64" passed, adding "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-55-04" to fw_dir variable
+dracut:     microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-5e-03"...
+intel-06-5e-03: model 'GenuineIntel 06-5e-03', path ' intel-ucode/06-5e-03', kvers ''
+Dependency check for required intel: calling check_caveat 'intel' '1' match_model=0
+intel: model '', path ' intel-ucode/*', kvers ''
+Dependency check for required intel succeeded: result=0
+dracut:       microcode_ctl: intel-06-5e-03: caveats check for kernel version "5.14.0-340.303.el9iv.x86_64" passed, adding "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-5e-03" to fw_dir variable
+dracut:     microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-8c-01"...
+intel-06-8c-01: model 'GenuineIntel 06-8c-01', path ' intel-ucode/06-8c-01', kvers ''
+Dependency check for required intel: calling check_caveat 'intel' '1' match_model=0
+intel: model '', path ' intel-ucode/*', kvers ''
+Dependency check for required intel succeeded: result=0
+dracut:       microcode_ctl: intel-06-8c-01: caveats check for kernel version "5.14.0-340.303.el9iv.x86_64" passed, adding "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-8c-01" to fw_dir variable
+dracut:     microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-8e-9e-0x-0xca"...
+intel-06-8e-9e-0x-0xca: model '', path ' intel-ucode/*', kvers ''
+Dependency check for required intel: calling check_caveat 'intel' '1' match_model=0
+intel: model '', path ' intel-ucode/*', kvers ''
+Dependency check for required intel succeeded: result=0
+intel-06-8e-9e-0x-0xca: caveat is disabled in configuration
+dracut:     microcode_ctl: kernel version "5.14.0-340.303.el9iv.x86_64" failed early load check for "intel-06-8e-9e-0x-0xca", skipping
+dracut:     microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-8e-9e-0x-dell"...
+intel-06-8e-9e-0x-dell: model '', path ' intel-ucode/*', kvers ''
+Dependency check for required intel: calling check_caveat 'intel' '1' match_model=0
+intel: model '', path ' intel-ucode/*', kvers ''
+Dependency check for required intel succeeded: result=0
+dracut:       microcode_ctl: intel-06-8e-9e-0x-dell: caveats check for kernel version "5.14.0-340.303.el9iv.x86_64" passed, adding "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-8e-9e-0x-dell" to fw_dir variable
+dracut:     microcode_ctl: final fw_dir: "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-8e-9e-0x-dell /usr/share/microcode_ctl/ucode_with_caveats/intel-06-8c-01 /usr/share/microcode_ctl/ucode_with_caveats/intel-06-5e-03 /usr/share/microcode_ctl/ucode_with_caveats/intel-06-55-04 /usr/share/microcode_ctl/ucode_with_caveats/intel-06-2d-07 /usr/share/microcode_ctl/ucode_with_caveats/intel /lib/firmware/updates/5.14.0-340.303.el9iv.x86_64 /lib/firmware/updates /lib/firmware/5.14.0-340.303.el9iv.x86_64 /lib/firmware"
+dracut: *** Including module: shutdown ***
+dracut: *** Including modules done ***
+dracut: *** Installing kernel module dependencies ***
+dracut: *** Installing kernel module dependencies done ***
+dracut: *** Resolving executable dependencies ***
+dracut: *** Resolving executable dependencies done ***
+dracut: *** Hardlinking files ***
+dracut: Mode:           real
+dracut: Files:          1614
+dracut: Linked:         12 files
+dracut: Compared:       0 xattrs
+dracut: Compared:       408 files
+dracut: Saved:          1.07 MiB
+dracut: Duration:       0.020737 seconds
+dracut: *** Hardlinking files done ***
+dracut: Could not find 'strip'. Not stripping the initramfs.
+dracut: *** Generating early-microcode cpio image ***
+dracut: *** Constructing GenuineIntel.bin ***
+dracut: *** Constructing GenuineIntel.bin ***
+dracut: *** Constructing GenuineIntel.bin ***
+dracut: *** Constructing GenuineIntel.bin ***
+dracut: *** Constructing GenuineIntel.bin ***
+dracut: *** Constructing GenuineIntel.bin ***
+dracut: *** Constructing GenuineIntel.bin ***
+dracut: *** Constructing GenuineIntel.bin ***
+dracut: *** Store current command line parameters ***
+dracut: *** Creating image file '/tmp/initramfs.img' ***
+dracut: dracut: using auto-determined compression method 'pigz'
+dracut: *** Creating initramfs image file '/tmp/initramfs.img' done ***
+
+⏱  Duration: 36s
+Pipeline ostree-commit: 71bd212e1d7791d66c0a0517f4c85ed673eb9f05224ab05f3ef0dbbcff40c57c
+Build
+  root: 86c78062205e745ea63f3a5fe3e05d05cfd686e1c59f9f210b3254b07c27fe2e
+  runner: org.osbuild.centos9 (org.osbuild.centos9)
+org.osbuild.ostree.init: 08a43ee277c3d5b4d16c3c97483e2298c458dbecff697b42abc3c9149c5749bb {
+  "path": "/repo"
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+
+⏱  Duration: 0s
+org.osbuild.ostree.commit: 71bd212e1d7791d66c0a0517f4c85ed673eb9f05224ab05f3ef0dbbcff40c57c {
+  "ref": "cs9/x86_64/qemu-minimal",
+  "os_version": "9"
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+warning: boot-location: "new" is deprecated, use boot-location: modules
+New passwd entries: adm, bin, daemon, dbus, ftp, games, guest, halt, lp, mail, nobody, operator, polkitd, shutdown, sync, systemd-coredump, tss
+New group entries: adm, audio, bin, cdrom, daemon, dbus, dialout, disk, floppy, ftp, games, input, kmem, kvm, lock, lp, mail, man, mem, nobody, polkitd, render, sys, systemd-coredump, systemd-journal, tape, tss, tty, users, utempter, utmp, video, wheel
+Committing...done
+Metadata Total: 7183
+Metadata Written: 2190
+Content Total: 12578
+Content Written: 10498
+Content Cache Hits: 0
+Content Bytes Written: 494380777
+cs9/x86_64/qemu-minimal => 17614188efee05466ef8541fba8286421272bc8aff638482d4ecd2a6976c770b
+
+⏱  Duration: 46s
+Pipeline image-tree: eb13e7b7e249499e77121d28cf79755a498809cdf1e4bf812ef3d10e9eb6c0ff
+Build
+  root: 86c78062205e745ea63f3a5fe3e05d05cfd686e1c59f9f210b3254b07c27fe2e
+  runner: org.osbuild.centos9 (org.osbuild.centos9)
+org.osbuild.ostree.init-fs: 94ede890b5371bc6dcdcdfb88194090de93861211e5c424830c1e2604fe775c2 {}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+ostree admin init-fs --modern /run/osbuild/tree --sysroot=/run/osbuild/tree
+
+⏱  Duration: 0s
+org.osbuild.ostree.pull: 2a0b79018a06c3847fd626ca8464a153d542019ec8bdd2cf3f0299db20ab1cda {
+  "repo": "/ostree/repo",
+  "remote": "auto-sig"
+}
+input/commits (org.osbuild.ostree): ostree init --mode=archive --repo=/home/vagrant/centos-automotive-sample-images/osbuild-manifests/_build/osbuild_store/tmp/buildroot-tmp-59kv8vn1/inputs/commits/repo
+input/commits (org.osbuild.ostree): exporting 17614188efee05466ef8541fba8286421272bc8aff638482d4ecd2a6976c770b
+input/commits (org.osbuild.ostree): ostree pull-local /home/vagrant/centos-automotive-sample-images/osbuild-manifests/_build/osbuild_store/stage/uuid-9af8e46f03434564ba21e843d3955356/data/tree/repo 17614188efee05466ef8541fba8286421272bc8aff638482d4ecd2a6976c770b --repo=/home/vagrant/centos-automotive-sample-images/osbuild-manifests/_build/osbuild_store/tmp/buildroot-tmp-59kv8vn1/inputs/commits/repo
+input/commits (org.osbuild.ostree): 2190 metadata, 10498 content objects imported; 0 bytes content written
+input/commits (org.osbuild.ostree): ostree refs --create cs9/x86_64/qemu-minimal 17614188efee05466ef8541fba8286421272bc8aff638482d4ecd2a6976c770b --repo=/home/vagrant/centos-automotive-sample-images/osbuild-manifests/_build/osbuild_store/tmp/buildroot-tmp-59kv8vn1/inputs/commits/repo
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+ostree pull-local /run/osbuild/inputs/commits/repo cs9/x86_64/qemu-minimal --remote=auto-sig --repo=/run/osbuild/tree/ostree/repo
+2190 metadata, 10498 content objects imported; 494.4 MB content written
+
+⏱  Duration: 11s
+org.osbuild.ostree.os-init: 37e975c103d39353005e59d757935803af83499eb74c57898102a564c0090c80 {
+  "osname": "centos"
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+ostree admin os-init centos --sysroot=/run/osbuild/tree
+ostree/deploy/centos initialized as OSTree root
+
+⏱  Duration: 0s
+org.osbuild.ostree.config: 941bd1f2014b7c9d84893ee49b0c563c8dfef8587da2b7fae955e2ece25df00e {
+  "repo": "/ostree/repo",
+  "config": {
+    "sysroot": {
+      "bootloader": "none"
+    }
+  }
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+ostree config set sysroot.bootloader none --repo=/run/osbuild/tree/ostree/repo
+
+⏱  Duration: 0s
+org.osbuild.ostree.remotes: 5ab83b627e69242fb389e755c8182d30ae92011bf53ff51a519dc7b693afb411 {
+  "repo": "/ostree/repo",
+  "remotes": [
+    {
+      "name": "auto-sig",
+      "url": "http://10.0.2.100/"
+    }
+  ]
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+ostree remote add --if-not-exists --no-gpg-verify auto-sig http://10.0.2.100/ --repo=/run/osbuild/tree/ostree/repo
+
+⏱  Duration: 0s
+org.osbuild.mkdir: 5871e98d9fe5de5102ba2b75344ffe4d4b53cd78deb72fe66759fb5e7e00b01a {
+  "paths": [
+    {
+      "path": "/boot/efi",
+      "mode": 448
+    }
+  ]
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+
+⏱  Duration: 0s
+org.osbuild.ostree.deploy: eb8a74d94566613b717a8b38e24d4de0e5da5a448c5d9a9804937b3aaa8590e3 {
+  "osname": "centos",
+  "ref": "cs9/x86_64/qemu-minimal",
+  "remote": "auto-sig",
+  "mounts": [
+    "/boot",
+    "/boot/efi"
+  ],
+  "rootfs": {
+    "label": "root"
+  },
+  "kernel_opts": [
+    "ro",
+    "loglevel=4",
+    "efi=runtime",
+    "libahci.ignore_sss=1",
+    "console=ttyS0"
+  ]
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+ostree admin deploy auto-sig:cs9/x86_64/qemu-minimal --karg=root=LABEL=root --karg-append=ro --karg-append=loglevel=4 --karg-append=efi=runtime --karg-append=libahci.ignore_sss=1 --karg-append=console=ttyS0 --sysroot=/run/osbuild/tree --os=centos
+Relabeling /var (no stamp file 'var/.ostree-selabeled' found)
+Bootloader updated; bootconfig swap: yes; bootversion: boot.1.1, deployment count change: 1
+
+⏱  Duration: 2s
+org.osbuild.ostree.fillvar: 3fe9ec1b89cd54d8469185c06f835ead505b7dd0702892a1dffcc6eb7fbe8ffa {
+  "deployment": {
+    "osname": "centos",
+    "ref": "cs9/x86_64/qemu-minimal"
+  }
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+/run/osbuild/tree/ostree/deploy/centos/deploy/17614188efee05466ef8541fba8286421272bc8aff638482d4ecd2a6976c770b.0/usr/lib/tmpfiles.d/var.conf:23: Duplicate line for path "/run/osbuild/tree/ostree/deploy/centos/deploy/17614188efee05466ef8541fba8286421272bc8aff638482d4ecd2a6976c770b.0/var/spool", ignoring.
+
+⏱  Duration: 0s
+org.osbuild.users: 0decf2d5f8df1aa4d6e42dd1e09a4047d6598bee764c43664a5d6bdd53a41aba {
+  "users": {
+    "root": {
+      "password": "$6$xoLqEUz0cGGJRx01$H3H/bFm0myJPULNMtbSsOFd/2BnHqHkMD92Sfxd.EKM9hXTWSmELG8cf205l6dktomuTcgKGGtGDgtvHVXSWU.",
+      "key": ""
+    }
+  }
+}
+mount/ostree.deployment (org.osbuild.ostree.deployment): Deployment root at 'ostree/deploy/centos/deploy/17614188efee05466ef8541fba8286421272bc8aff638482d4ecd2a6976c770b.0'
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+
+⏱  Duration: 0s
+org.osbuild.fstab: e234f910daf9b906a208a6e249eea0bbeaada7af9f90a22dfe5de20bfcb8f5eb {
+  "ostree": {
+    "deployment": {
+      "osname": "centos",
+      "ref": "cs9/x86_64/qemu-minimal"
+    }
+  },
+  "filesystems": [
+    {
+      "uuid": "76a22bf4-f153-4541-b6c7-0332c0dfaeac",
+      "vfs_type": "ext4",
+      "path": "/",
+      "freq": 1,
+      "passno": 1
+    },
+    {
+      "label": "ESP",
+      "vfs_type": "vfat",
+      "path": "/boot/efi",
+      "freq": 1,
+      "passno": 1
+    },
+    {
+      "uuid": "156f0420-627b-4151-ae6f-fda298097515",
+      "vfs_type": "ext4",
+      "path": "/boot",
+      "freq": 1,
+      "passno": 1
+    }
+  ]
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+ostree support active: /run/osbuild/tree/ostree/deploy/centos/deploy/17614188efee05466ef8541fba8286421272bc8aff638482d4ecd2a6976c770b.0
+
+⏱  Duration: 0s
+org.osbuild.ostree.selinux: 0055435d02ba26b5b589e62cd38fea5d5ea9e5527c23942d92291e3086ecba69 {
+  "deployment": {
+    "osname": "centos",
+    "ref": "cs9/x86_64/qemu-minimal"
+  }
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+
+⏱  Duration: 1s
+org.osbuild.grub2: eb13e7b7e249499e77121d28cf79755a498809cdf1e4bf812ef3d10e9eb6c0ff {
+  "rootfs": {
+    "label": "root"
+  },
+  "bootfs": {
+    "label": "boot"
+  },
+  "uefi": {
+    "vendor": "centos",
+    "unified": true,
+    "install": true
+  },
+  "legacy": false,
+  "write_defaults": false,
+  "greenboot": true
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+# GRUB Environment Block
+kernelopts=root=LABEL=root
+###########################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+hybrid boot or unified grub config enabled. Writing alias grub config
+
+⏱  Duration: 0s
+Pipeline image: 3de004cb3fd684c6aa2813b81d04a3e517b5bc34ef55a28f1706614382f798ac
+Build
+  root: 86c78062205e745ea63f3a5fe3e05d05cfd686e1c59f9f210b3254b07c27fe2e
+  runner: org.osbuild.centos9 (org.osbuild.centos9)
+org.osbuild.truncate: 98f860416799fd8525f52a18f2f67e9c983e5ac444a39068524d07d9e14ab25f {
+  "filename": "disk.img",
+  "size": "8589934592"
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+
+⏱  Duration: 0s
+org.osbuild.sfdisk: 8f876e8cdcc6587ed6e2ca9ac361ca0aa0d534019397664402b146c081321a2c {
+  "uuid": "d209c89e-ea5e-4fbd-b161-b461cce297e0",
+  "label": "gpt",
+  "partitions": [
+    {
+      "start": 2048,
+      "size": 204800,
+      "type": "C12A7328-F81F-11D2-BA4B-00A0C93EC93B",
+      "name": "efi",
+      "uuid": "68b2905b-df3e-4fb3-80fa-49d1e773aa33"
+    },
+    {
+      "start": 206848,
+      "size": 614400,
+      "type": "0FC63DAF-8483-4772-8E79-3D69D8477DE4",
+      "name": "boot",
+      "uuid": "61b2905b-df3e-4fb3-80fa-49d1e773aa32"
+    },
+    {
+      "start": 821248,
+      "size": 15955935,
+      "type": "0FC63DAF-8483-4772-8E79-3D69D8477DE4",
+      "name": "root",
+      "uuid": "6264d520-3fb9-423f-8ab8-7a0a8e3d3562"
+    }
+  ]
+}
+device/device (org.osbuild.loopback): loop0 acquired (locked: False)
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+label: gpt
+label-id: d209c89e-ea5e-4fbd-b161-b461cce297e0
+start="2048", size="204800", type="C12A7328-F81F-11D2-BA4B-00A0C93EC93B", name="efi", uuid="68b2905b-df3e-4fb3-80fa-49d1e773aa33"
+start="206848", size="614400", type="0FC63DAF-8483-4772-8E79-3D69D8477DE4", name="boot", uuid="61b2905b-df3e-4fb3-80fa-49d1e773aa32"
+start="821248", size="15955935", type="0FC63DAF-8483-4772-8E79-3D69D8477DE4", name="root", uuid="6264d520-3fb9-423f-8ab8-7a0a8e3d3562"
+{
+   "partitiontable": {
+      "label": "gpt",
+      "id": "D209C89E-EA5E-4FBD-B161-B461CCE297E0",
+      "device": "/dev/loop0",
+      "unit": "sectors",
+      "firstlba": 2048,
+      "lastlba": 16777182,
+      "sectorsize": 512,
+      "partitions": [
+         {
+            "node": "/dev/loop0p1",
+            "start": 2048,
+            "size": 204800,
+            "type": "C12A7328-F81F-11D2-BA4B-00A0C93EC93B",
+            "uuid": "68B2905B-DF3E-4FB3-80FA-49D1E773AA33",
+            "name": "efi"
+         },{
+            "node": "/dev/loop0p2",
+            "start": 206848,
+            "size": 614400,
+            "type": "0FC63DAF-8483-4772-8E79-3D69D8477DE4",
+            "uuid": "61B2905B-DF3E-4FB3-80FA-49D1E773AA32",
+            "name": "boot"
+         },{
+            "node": "/dev/loop0p3",
+            "start": 821248,
+            "size": 15955935,
+            "type": "0FC63DAF-8483-4772-8E79-3D69D8477DE4",
+            "uuid": "6264D520-3FB9-423F-8AB8-7A0A8E3D3562",
+            "name": "root"
+         }
+      ]
+   }
+}
+
+⏱  Duration: 0s
+org.osbuild.mkfs.fat: e0b15a0d3ba3cf84dae0521ec25073264e4ec12427ca363ad64dbf77d7dc52d0 {
+  "label": "ESP",
+  "volid": "7B7795E7"
+}
+device/device (org.osbuild.loopback): loop0 acquired (locked: False)
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+mkfs.fat 4.2 (2021-01-31)
+
+⏱  Duration: 0s
+org.osbuild.mkfs.ext4: 651e836aec88aaa53f3b5921bd83e27360d872a5d366c25833d1adf25146cb30 {
+  "uuid": "156f0420-627b-4151-ae6f-fda298097515",
+  "label": "boot"
+}
+device/device (org.osbuild.loopback): loop0 acquired (locked: False)
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+mke2fs 1.46.5 (30-Dec-2021)
+Discarding device blocks: done
+Creating filesystem with 307200 1k blocks and 76912 inodes
+Filesystem UUID: 156f0420-627b-4151-ae6f-fda298097515
+Superblock backups stored on blocks:
+	8193, 24577, 40961, 57345, 73729, 204801, 221185
+
+Allocating group tables: done
+Writing inode tables: done
+Creating journal (8192 blocks): done
+Writing superblocks and filesystem accounting information: done
+
+
+⏱  Duration: 0s
+org.osbuild.mkfs.ext4: 96f78bc3880e50c8a7390bc2497cca7481f0da0c8ef0770322d92a149608eb57 {
+  "uuid": "76a22bf4-f153-4541-b6c7-0332c0dfaeac",
+  "label": "root",
+  "verity": true
+}
+device/device (org.osbuild.loopback): loop0 acquired (locked: False)
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+mke2fs 1.46.5 (30-Dec-2021)
+Discarding device blocks: done
+Creating filesystem with 1994491 4k blocks and 498736 inodes
+Filesystem UUID: 76a22bf4-f153-4541-b6c7-0332c0dfaeac
+Superblock backups stored on blocks:
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632
+
+Allocating group tables: done
+Writing inode tables: done
+Creating journal (16384 blocks): done
+Writing superblocks and filesystem accounting information: done
+
+
+⏱  Duration: 0s
+org.osbuild.copy: 3de004cb3fd684c6aa2813b81d04a3e517b5bc34ef55a28f1706614382f798ac {
+  "paths": [
+    {
+      "from": "input://tree/",
+      "to": "mount://root/"
+    }
+  ]
+}
+device/efi (org.osbuild.loopback): loop0 acquired (locked: False)
+device/boot (org.osbuild.loopback): loop1 acquired (locked: False)
+device/root (org.osbuild.loopback): loop2 acquired (locked: False)
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+copying '/run/osbuild/inputs/tree/.' -> '/run/osbuild/mounts/.'
+mount/efi (org.osbuild.fat): umounting
+mount/boot (org.osbuild.ext4): umounting
+mount/root (org.osbuild.ext4): umounting
+
+⏱  Duration: 7s
+Pipeline qcow2: 47e5dcd9e2e42a924cb8fd150ad1dbeae53e064ccc1167cfd12710933221ef98
+Build
+  root: 86c78062205e745ea63f3a5fe3e05d05cfd686e1c59f9f210b3254b07c27fe2e
+  runner: org.osbuild.centos9 (org.osbuild.centos9)
+org.osbuild.qemu: 47e5dcd9e2e42a924cb8fd150ad1dbeae53e064ccc1167cfd12710933221ef98 {
+  "filename": "disk.qcow2",
+  "format": {
+    "type": "qcow2",
+    "compat": "1.1"
+  }
+}
+/usr/lib/tmpfiles.d/journal-nocow.conf:26: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:23: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:25: Failed to replace specifiers in '/run/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:26: Failed to replace specifiers in '/run/log/journal/%m/*.journal*': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:29: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:30: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:32: Failed to replace specifiers in '/var/log/journal/%m': No such file or directory
+/usr/lib/tmpfiles.d/systemd.conf:33: Failed to replace specifiers in '/var/log/journal/%m/system.journal': No such file or directory
+Failed to open file "/sys/fs/selinux/checkreqprot": Read-only file system
+
+⏱  Duration: 36s
+build:    	86c78062205e745ea63f3a5fe3e05d05cfd686e1c59f9f210b3254b07c27fe2e
+rootfs:   	ed474f3f20defe9fab6158e30072009cc042872cf1a5771b03f46cc10e168dd1
+extra-tree-content:	fd74425ba8d7a34eb17895370f30346b02e013ff1383b85b8dd64f5e984db1b0
+build-keys:	None
+ostree-tree:	54fe818ee8e540e9d4cfc92714d4b133a6d06587485a409bc7475f4ad0a19b2e
+ostree-commit:	71bd212e1d7791d66c0a0517f4c85ed673eb9f05224ab05f3ef0dbbcff40c57c
+image-tree:	eb13e7b7e249499e77121d28cf79755a498809cdf1e4bf812ef3d10e9eb6c0ff
+image:    	3de004cb3fd684c6aa2813b81d04a3e517b5bc34ef55a28f1706614382f798ac
+qcow2:    	47e5dcd9e2e42a924cb8fd150ad1dbeae53e064ccc1167cfd12710933221ef98
+ext4-fstab:	2f95ae95edaf5bdbeae46f2a557dccd57aa3be845c5d536671ed8b87eded5464
+ext4:     	1705d444b2adae9226d2adc93d941cb67cf08b39d9460e5480d7f4bb99f0dc3e
+aboot:    	64c79ed53f4bc3017072374aaffd7083182612cbe84ed48567318797968512b0
+raw-image-tree:	2861e2373b7abf3016cd764cc5184a401ee1ccbebd39bc996c8c50101edd742a
+container:	8a04af2a27a305090b0408ddcbaf38afdd5b2e6a2198c4adbc32beacdf1156cf
+tar:      	18b2a041b1b4a74912b85115f415b89b40f365a115ae6f7cb684952db1d08c44
++ '[' 0 == 1 ']'
++ rm -rf cs9-qemu-minimal-ostree.x86_64.qcow2
++ sudo chown 1000:1000 _build/image_output/qcow2/disk.qcow2
++ sudo mv _build/image_output/qcow2/disk.qcow2 cs9-qemu-minimal-ostree.x86_64.qcow2
++ sudo rm -rf _build/image_output/qcow2
